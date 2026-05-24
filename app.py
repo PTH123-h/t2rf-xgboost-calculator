@@ -90,6 +90,14 @@ st.markdown(
         font-size: 0.86rem;
         line-height: 1.45;
     }
+    .research-note {
+        margin-top: 0.8rem;
+        padding-top: 0.65rem;
+        border-top: 1px solid #d8dee4;
+        color: #57606a;
+        font-size: 0.82rem;
+        line-height: 1.42;
+    }
     .main-note {
         margin-bottom: 0.55rem;
     }
@@ -155,12 +163,10 @@ with right_panel:
             <div class="risk-value">{risk_display}</div>
             <div class="risk-label">{label_display}</div>
             <div class="note">Classification threshold: {THRESHOLD:.6f}</div>
+            <div class="research-note">This web-based calculator is intended for research use.</div>
         </div>
         """,
         unsafe_allow_html=True,
     )
 
-    st.markdown(
-        "<div class='note'>For teaching demonstration only. Not for direct clinical decision-making.</div>",
-        unsafe_allow_html=True,
-    )
+ 
