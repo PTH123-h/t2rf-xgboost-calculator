@@ -34,7 +34,7 @@ st.markdown(
     <style>
     .block-container {
         max-width: 980px;
-        padding-top: 1.1rem;
+        padding-top: 2.8rem;
         padding-bottom: 1.2rem;
     }
     html, body, [class*="css"] {
@@ -162,11 +162,8 @@ with right_panel:
         <div class="risk-box">
             <div class="risk-value">{risk_display}</div>
             <div class="risk-label">{label_display}</div>
-            <div class="note">Classification threshold: {THRESHOLD:.6f}</div>
             <div class="research-note">This web-based calculator is intended for research use.</div>
         </div>
         """,
         unsafe_allow_html=True,
     )
-
- 
